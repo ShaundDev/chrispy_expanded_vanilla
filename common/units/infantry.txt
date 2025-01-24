@@ -33,8 +33,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 20
+		max_organisation = 55
 		default_morale = 0.3
 		manpower = 1000
 
@@ -47,6 +47,25 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 100
+		}
+		forest = {
+			attack = 0.05
+			defence = 0.05 
+			movement = 0.05
+		}
+		urban = {
+			defence = 0.125
+			attack = 0.075
+		}
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 	}
 

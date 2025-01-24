@@ -33,27 +33,27 @@ sub_units = {
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.21
+		supply_consumption = 0.2
 
 		#Line artillery bonuses
 		# soft_attack = 0.25
 		
 		forest = {
-			attack = -0.2
-			movement = -0.2
+			attack = -0.1
+			movement = -0.25
 		}
 
 		hills = {
-			movement = -0.05
+			movement = -0.1
 		}
 
 		mountain = {
-			movement = -0.2
+			movement = -0.25
 		}
 
 		jungle = {
 			attack = -0.25
-			movement = -0.2
+			movement = -0.25
 		}
 
 		marsh = {
@@ -118,8 +118,8 @@ sub_units = {
 		supply_consumption = 0.25
 		
 		forest = {
-			attack = -0.2
-			movement = -0.5
+			attack = -0.1
+			movement = -0.2
 		}
 
 		hills = {
@@ -132,7 +132,7 @@ sub_units = {
 
 		jungle = {
 			attack = -0.25
-			movement = -0.5
+			movement = -0.2
 		}
 
 		marsh = {
@@ -146,7 +146,7 @@ sub_units = {
 
 		river = {
 			attack = -0.2
-			movement = -0.2
+			movement = -0.1
 		}
 
 		amphibious = {
