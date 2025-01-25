@@ -1452,7 +1452,7 @@ NNavy = {
 	UNDERWAY_REPLENISHMENT_PRIORITY = 7,							-- Default convoy priority for underway replenishment
 	-- Convoy Priorities END
 
-	ADMIRAL_TASKFORCE_CAP = 5,										-- admirals will start getting penalties after this amount of taskforces
+	ADMIRAL_TASKFORCE_CAP = 6,										-- admirals will start getting penalties after this amount of taskforces
 
 	DETECTION_CHANCE_MULT_BASE = 0.1,								-- base multiplier value for detection chance. Later the chance is an average between our detection and enemy visibility, mult by surface/sub detection chance in the following defines.
 	DETECTION_CHANCE_MULT_RADAR_BONUS = 0.1,						-- detection chance bonus from radars.
