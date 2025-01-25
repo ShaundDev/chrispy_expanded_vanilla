@@ -1471,11 +1471,11 @@ NNavy = {
 	COMBAT_LOW_ORG_HIT_CHANCE_PENALTY = -0.5,						-- % of penalty applied to hit chance when ORG is very low.
 	COMBAT_LOW_MANPOWER_HIT_CHANCE_PENALTY = -0.25,					-- % of penalty applied to hit chance when manpower is very low.
 	COMBAT_DAMAGE_RANDOMNESS = 0.3,									-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
-	COMBAT_TORPEDO_CRITICAL_CHANCE = 0.1,							-- chance for critical hit from torpedo.
+	COMBAT_TORPEDO_CRITICAL_CHANCE = 0.125,							-- chance for critical hit from torpedo.
 	COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 2.0,						-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usualy torpedo_attack are pretty high base values).
 
-	COMBAT_DAMAGE_TO_STR_FACTOR = 0.6,								-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-	COMBAT_DAMAGE_TO_ORG_FACTOR = 1.0,								-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+	COMBAT_DAMAGE_TO_STR_FACTOR = 0.24,								-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+	COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4,								-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 
 	NAVY_MAX_XP = 100,
 	COMBAT_ON_THE_WAY_INIT_DISTANCE_BALANCE = 0.25, 				-- Value to balance initial distance to arrive for ships that are "on the way"
@@ -1552,14 +1552,14 @@ NNavy = {
 	MANPOWER_LOSS_RATIO_ON_STR_LOSS = 0.5,							-- losing strength will make you also lose manpower at this ratio of total manpower
 	MIN_MANPOWER_RATIO_TO_DROP = 0.1,								-- ships will not lose man power to below this ratio
 	DAILY_MANPOWER_GAIN_RATIO = 0.05,								-- the ships not in combat will be able to gain this ratio of their max manpower
-	PRIDE_OF_THE_FLEET_UNASSIGN_COST = 50,							-- cost to unassign/replace pride of the fleet
+	PRIDE_OF_THE_FLEET_UNASSIGN_COST = 10,							-- cost to unassign/replace pride of the fleet
 	PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 30,			-- duration for temp modifiers that you get when you lose your pride of the fleet
 	XP_GAIN_FACTOR = 1.0,	   			   							-- xp gain factor for navy
 
 	NAVAL_TRANSFER_DAMAGE_REDUCTION = 0.25,							-- its hard to specifically balance 1-tick naval strikes vs unit transports so here is a factor for it
 	CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0,							-- hours from start of combat when carriers get to fight
 	CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 6,                          -- hours from start of combat when only carriers, capitals and subs get to attack
-	ALL_SHIPS_ACTIVATE_TIME = 8,                                    -- hours where all get to attack
+	ALL_SHIPS_ACTIVATE_TIME = 12,                                    -- hours where all get to attack
 
 	MINIMUM_SHIP_SPEED = 1.0,										-- slowest speed a ship can have
 
@@ -1705,7 +1705,7 @@ NNavy = {
 	SUPREMACY_PER_SHIP_PER_IC = 0.005,
 	SUPREMACY_PER_SHIP_BASE = 0,
 
-	NAVAL_MINES_IN_REGION_MAX = 250.0,								-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
+	NAVAL_MINES_IN_REGION_MAX = 100.0,								-- Max number of mines that can be layed by the ships. The value should be hidden from the user, as we present % so it's an abstract value that should be used for balancing.
 	NAVAL_MINES_PLANTING_SPEED_MULT = 0.01,						-- Value used to overall balance of the speed of planting naval mines
 	NAVAL_MINES_SWEEPING_SPEED_MULT = 0.01,						-- Value used to overall balance of the speed of sweeping naval mines
 	NAVAL_MINES_DECAY_AT_PEACE_TIME = 2,							-- How fast mines are decaying in peace time. Planting mines in peace time may be exploitable, so it's blocked atm. That's why after war we should decay them too.
@@ -1849,10 +1849,10 @@ NNavy = {
 	MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR 					= 0.25;  -- max penalty from stronger carrier air force
 
 	POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.05, -- each ship that joins the combat will have this penalty to be added into positioning
-	MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.25,  -- the accumulated penalty from new ships will be clamped to this value
+	MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS 					= 0.5,  -- the accumulated penalty from new ships will be clamped to this value
 	POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS			= 0.05,-- the accumulated penalty from new ships will decay hourly by this value
 
-	DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 							= 0.60,	-- damage penalty at 0% positioning
+	DAMAGE_PENALTY_ON_MINIMUM_POSITIONING 							= 0.65,	-- damage penalty at 0% positioning
 	SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING				= 0.5,  -- screening efficiency (screen to capital ratio) at 0% positioning
 	AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING					= 0.7,  -- AA penalty at 0% positioning
 	SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING                         = 2.0,  -- submarine reveal change on 0% positioning
@@ -1999,7 +1999,7 @@ NNavy = {
 	},
 
 	NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
-		2.00,
+		1.35,
 		1.00,
 		0.75,
 		0.50,
@@ -2017,9 +2017,9 @@ NNavy = {
 	},
 
 	NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.35,
 		1.00,
-		1.00,
-		0.70,
+		0.75,
 		0.40,
 		0.30,
 		0.10 --
