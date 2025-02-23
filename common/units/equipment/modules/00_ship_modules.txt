@@ -132,18 +132,17 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 1
+			lg_attack = 5.5
 			anti_air_attack = 1
-			build_cost_ic = 100
+			build_cost_ic = 120
 		}
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.02
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 0.5
+			lg_armor_piercing = 2
 		}
 		
 		can_convert_from = {
@@ -160,18 +159,17 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 1.5
-			anti_air_attack = 2
-			build_cost_ic = 130
+			lg_attack = 6
+			anti_air_attack = 1.5
+			build_cost_ic = 150
 		}
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.03
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 1
+			lg_armor_piercing = 3
 		}
 		
 		can_convert_from = {
@@ -193,18 +191,17 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 2
-			anti_air_attack = 3
+			lg_attack = 7.5
+			anti_air_attack = 2
 			build_cost_ic = 160
 		}
 		multiply_stats = {
-			naval_speed = -0.03
+			naval_speed = -0.04
 		}
 		build_cost_resources = {
-			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 1.75
+			lg_armor_piercing = 4
 		}
 		
 		can_convert_from = {
@@ -226,18 +223,18 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
-			lg_attack = 2.5
-			anti_air_attack = 4
-			build_cost_ic = 185
+			lg_attack = 10.5
+			anti_air_attack = 3
+			build_cost_ic = 180
 		}
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.05
 		}
 		build_cost_resources = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 1.75
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
@@ -752,18 +749,20 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = ship_light_medium_battery_3
 		add_stats = {
-			lg_attack = 7.5
+			armor_value = 1.3
+			lg_attack = 7
 			anti_air_attack = 4.5
-			build_cost_ic = 450
+			build_cost_ic = 400
 		}
 
 		multiply_stats = {
-			naval_speed = -0.06
+			naval_speed = -0.05
+			build_cost_ic = 0.05
+			max_strength = 0.05
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 8
-			max_strength = 20
+			lg_armor_piercing = 10.2
 		}
 
 		forbid_module_categories = {
@@ -799,7 +798,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			lg_attack = 3
+			lg_attack = 5
 			build_cost_ic = 400
 		}
 		
@@ -825,7 +824,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 4
+			lg_attack = 6
 			build_cost_ic = 450
 		}
 		multiply_stats = {
@@ -850,17 +849,16 @@ equipment_modules = {
 		gfx = dp_secondary_battery_1
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 2
-			anti_air_attack = 1
-			build_cost_ic = 180
+			lg_attack = 4
+			anti_air_attack = 1.5
+			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			naval_speed = -0.01
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 3
+			lg_armor_piercing = 2
 		}
 		
 		can_convert_from = {
@@ -883,17 +881,16 @@ equipment_modules = {
 		gfx = dp_secondary_battery_2
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 3
+			lg_attack = 5
 			anti_air_attack = 2
-			build_cost_ic = 240
+			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			naval_speed = -0.01
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 3
 		}
 		
 		can_convert_from = {
@@ -916,17 +913,16 @@ equipment_modules = {
 		gfx = dp_secondary_battery_3
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 4
+			lg_attack = 6
 			anti_air_attack = 2.5
 			build_cost_ic = 300
 		}
 
 		multiply_stats = {
-			naval_speed = -0.03
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 4
 		}
 		
 		can_convert_from = {
@@ -949,17 +945,16 @@ equipment_modules = {
 		gfx = dp_secondary_battery_4
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 4.5
+			lg_attack = 7
 			anti_air_attack = 3
-			build_cost_ic = 360
+			build_cost_ic = 350
 		}
 
 		multiply_stats = {
-			naval_speed = -0.03
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
@@ -1194,8 +1189,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
+			naval_light_gun_hit_chance_factor = 0.015
+			naval_heavy_gun_hit_chance_factor = 0.015
 			build_cost_ic = 80
 			surface_detection = 6
+			sub_detection = 1
 		}
 		multiply_stats = {
 		anti_air_attack = 0.05
@@ -1871,7 +1869,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.3
+			naval_speed = 0.1
 			build_cost_ic = 0.10
 			
 		}
@@ -1896,7 +1894,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.4
+			naval_speed = 0.15
 			build_cost_ic = 0.125
 			
 		}
@@ -1926,7 +1924,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.5
+			naval_speed = 0.2
 			build_cost_ic = 0.15
 			
 		}
@@ -1955,7 +1953,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.60
+			naval_speed = 0.25
 			build_cost_ic = 0.175
 		}
 		
@@ -1983,7 +1981,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_range = 1
-			naval_speed = 0.6
+			naval_speed = 0.30
 			build_cost_ic = 0.25
 			fuel_consumption = -1
 		}
@@ -2435,9 +2433,13 @@ equipment_modules = {
 		abbreviation = "scsat"
 		category = ship_sub_coating
 		gfx = ship_sub_anechoic_tile_1
+		add_stats = {
+			build_cost_ic = 150
+			max_strength = 50
+		}
 		multiply_stats = {
 			sub_visibility = -0.05
-			build_cost_ic = 0.25
+			build_cost_ic = 0.1
 		}
 		build_cost_resources = {
 			rubber = 2
