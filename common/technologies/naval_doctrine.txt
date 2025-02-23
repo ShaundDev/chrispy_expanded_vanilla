@@ -53,7 +53,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		doctrine = yes	
 		research_cost = 3
 		
@@ -919,7 +919,7 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1763,7 +1763,7 @@ technologies = {
 			}
 		}		
 		xp_research_type = navy
-		xp_unlock_cost = 100
+		xp_unlock_cost = 0
 		doctrine = yes	
 		research_cost = 3
 		
